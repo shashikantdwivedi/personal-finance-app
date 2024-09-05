@@ -1,0 +1,28 @@
+^D:\SHASHIKANTDWIVEDI.COM\PROJECTS\PERSONAL-FINANCE-MANAGEMENT\PF_APP\BUILD\WINDOWS\X64\CMAKEFILES\92298B630B6595FF19C7AE7D279969FD\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\SHASHIKANTDWIVEDI.COM\PROJECTS\PERSONAL-FINANCE-MANAGEMENT\pf_app\.fvm\flutter_sdk PROJECT_DIR=D:\SHASHIKANTDWIVEDI.COM\PROJECTS\PERSONAL-FINANCE-MANAGEMENT\pf_app FLUTTER_ROOT=D:\SHASHIKANTDWIVEDI.COM\PROJECTS\PERSONAL-FINANCE-MANAGEMENT\pf_app\.fvm\flutter_sdk FLUTTER_EPHEMERAL_DIR=D:\SHASHIKANTDWIVEDI.COM\PROJECTS\PERSONAL-FINANCE-MANAGEMENT\pf_app\windows\flutter\ephemeral PROJECT_DIR=D:\SHASHIKANTDWIVEDI.COM\PROJECTS\PERSONAL-FINANCE-MANAGEMENT\pf_app FLUTTER_TARGET=D:\SHASHIKANTDWIVEDI.COM\PROJECTS\PERSONAL-FINANCE-MANAGEMENT\pf_app\lib\main.dart DART_DEFINES=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\SHASHIKANTDWIVEDI.COM\PROJECTS\PERSONAL-FINANCE-MANAGEMENT\pf_app\.dart_tool\package_config.json D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/.fvm/flutter_sdk/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SHASHIKANTDWIVEDI.COM\PROJECTS\PERSONAL-FINANCE-MANAGEMENT\PF_APP\BUILD\WINDOWS\X64\CMAKEFILES\A56275F8FFE0F68E43C43C24766D3808\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SHASHIKANTDWIVEDI.COM\PROJECTS\PERSONAL-FINANCE-MANAGEMENT\PF_APP\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/windows -BD:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64 --check-stamp-file D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

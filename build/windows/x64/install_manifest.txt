@@ -1,0 +1,11 @@
+D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/runner/Debug/data/icudtl.dat
+D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/runner/Debug/flutter_windows.dll
+D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/runner/Debug/connectivity_plus_plugin.dll
+D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.bin
+D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.json
+D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/runner/Debug/data/flutter_assets/FontManifest.json
+D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/runner/Debug/data/flutter_assets/kernel_blob.bin
+D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/runner/Debug/data/flutter_assets/NOTICES.Z
+D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+D:/SHASHIKANTDWIVEDI.COM/PROJECTS/PERSONAL-FINANCE-MANAGEMENT/pf_app/build/windows/x64/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag

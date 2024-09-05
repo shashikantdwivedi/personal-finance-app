@@ -1,0 +1,10 @@
+^D:\SHASHIKANTDWIVEDI.COM\PROJECTS\PERSONAL-FINANCE-MANAGEMENT\PF_APP\BUILD\WINDOWS\X64\CMAKEFILES\72D588DE100BD4ED37E108DC59D6853A\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
