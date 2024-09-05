@@ -12,16 +12,8 @@ class _NoConnectionScreenState extends State<NoConnectionScreen> {
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
         backgroundColor: Colors.white,
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset('assets/images/no-internet.jpg'),
-              const SizedBox(height: 20),
-              const Text('No Internet Connection', textAlign: TextAlign.center, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-            ],
-          ),
+        body: Center(
+          child: Image.asset('assets/images/no-internet.png', width: MediaQuery.of(context).size.width * 0.5),
         )
     ));
   }

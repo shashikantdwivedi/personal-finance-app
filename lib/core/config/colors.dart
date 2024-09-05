@@ -10,4 +10,5 @@ abstract class XColors {
   static Color warning = const Color(0xFFFFBB54);
   static Color info = const Color(0xFF58CDFF);
   static Color body = const Color(0xFF464255);
+  static Color dark = const Color(0xFF24232C);
 }
