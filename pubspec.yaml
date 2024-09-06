@@ -21,6 +21,7 @@ dependencies:
   flutter_svg: ^2.0.10+1
   window_manager: ^0.4.2
   icons_plus: ^5.0.0
+  data_table_2: ^2.5.15
 
 dev_dependencies:
   flutter_test:

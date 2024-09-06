@@ -5,12 +5,13 @@ class XButton extends StatefulWidget {
   final VoidCallback onPressed;
   final bool loading;
   final String text;
+  Color? backgroundColor;
 
-  const XButton(
+  XButton(
       {Key? key,
       required this.onPressed,
       required this.text,
-      required this.loading})
+      required this.loading, this.backgroundColor})
       : super(key: key);
 
   @override
@@ -24,7 +25,7 @@ class _XButtonState extends State<XButton> {
       style: ElevatedButton.styleFrom(
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(15.0))),
-        backgroundColor: XColors.body,
+        backgroundColor: widget.backgroundColor ?? XColors.body,
       ),
       onPressed: widget.loading ? null : widget.onPressed,
       child: Row(

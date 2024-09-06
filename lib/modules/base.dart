@@ -3,7 +3,9 @@ import 'package:pf_app/components/sidebar.dart';
 import 'package:pf_app/core/config/config.dart';
 
 class Base extends StatefulWidget {
-  const Base({Key? key}) : super(key: key);
+  final Widget child;
+
+  const Base({Key? key, required this.child}) : super(key: key);
 
   @override
   _BaseState createState() => _BaseState();
@@ -19,10 +21,10 @@ class _BaseState extends State<Base> {
         children: [
           const SizedBox(),
           Expanded(
-              child: Column(
+              child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [Sidebar()],
+            children: [const Sidebar(), Expanded(child: widget.child)],
           ))
         ],
       ),

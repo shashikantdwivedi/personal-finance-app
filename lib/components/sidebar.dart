@@ -34,27 +34,175 @@ class _SidebarState extends State<Sidebar> {
         children: [
           const Image(image: AssetImage("assets/images/logo.png")),
           const SizedBox(height: 20),
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(Routes.dashboard);
+            },
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: 10),
+              decoration: BoxDecoration(
+                // Check if route is dashboard and set the color to XColors.primary
+                  color: ModalRoute.of(context)?.settings.name == Routes.dashboard
+                      ? XColors.primary.withOpacity(0.15)
+                      : Colors.transparent,
+                  borderRadius: BorderRadius.circular(8)),
+              child: ListTile(
+                leading: Icon(Iconsax.home_1_outline,
+                    color:
+                    ModalRoute.of(context)?.settings.name == Routes.dashboard
+                        ? Colors.white
+                        : const Color(0xFFA3A3A3)),
+                title: Text('Dashboard',
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                      color: ModalRoute.of(context)?.settings.name ==
+                          Routes.dashboard
+                          ? Colors.white
+                          : const Color(0xFFA3A3A3),
+                    )),
+              ),
+            ),
+          ),
+          const SizedBox(height: 10),
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(Routes.accounts);
+            },
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: 10),
+              decoration: BoxDecoration(
+                // Check if route is dashboard and set the color to XColors.primary
+                  color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                      ? XColors.primary.withOpacity(0.15)
+                      : Colors.transparent,
+                  borderRadius: BorderRadius.circular(8)),
+              child: ListTile(
+                leading: Icon(Iconsax.bank_outline,
+                    color:
+                    ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                        ? Colors.white
+                        : const Color(0xFFA3A3A3)),
+                title: Text('Accounts',
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                      color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                          ? Colors.white
+                          : const Color(0xFFA3A3A3),
+                    )),
+              ),
+            ),
+          ),
+          const SizedBox(height: 10),
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 10),
             decoration: BoxDecoration(
-                // Check if route is dashboard and set the color to XColors.primary
-                color: ModalRoute.of(context)?.settings.name == Routes.dashboard
+              // Check if route is dashboard and set the color to XColors.primary
+                color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
                     ? XColors.primary.withOpacity(0.15)
                     : Colors.transparent,
                 borderRadius: BorderRadius.circular(8)),
             child: ListTile(
-              leading: Icon(Iconsax.home_1_outline,
+              leading: Icon(Iconsax.card_outline,
                   color:
-                      ModalRoute.of(context)?.settings.name == Routes.dashboard
-                          ? Colors.white
-                          : const Color(0xFFA3A3A3)),
-              title: Text('Dashboard',
+                  ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                      ? Colors.white
+                      : const Color(0xFFA3A3A3)),
+              title: Text('Cards',
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        color: ModalRoute.of(context)?.settings.name ==
-                                Routes.dashboard
-                            ? Colors.white
-                            : const Color(0xFFA3A3A3),
-                      )),
+                    color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                        ? Colors.white
+                        : const Color(0xFFA3A3A3),
+                  )),
+            ),
+          ),
+          const SizedBox(height: 10),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 10),
+            decoration: BoxDecoration(
+              // Check if route is dashboard and set the color to XColors.primary
+                color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                    ? XColors.primary.withOpacity(0.15)
+                    : Colors.transparent,
+                borderRadius: BorderRadius.circular(8)),
+            child: ListTile(
+              leading: Icon(Iconsax.category_2_outline,
+                  color:
+                  ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                      ? Colors.white
+                      : const Color(0xFFA3A3A3)),
+              title: Text('Categories',
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                        ? Colors.white
+                        : const Color(0xFFA3A3A3),
+                  )),
+            ),
+          ),
+          const SizedBox(height: 10),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 10),
+            decoration: BoxDecoration(
+              // Check if route is dashboard and set the color to XColors.primary
+                color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                    ? XColors.primary.withOpacity(0.15)
+                    : Colors.transparent,
+                borderRadius: BorderRadius.circular(8)),
+            child: ListTile(
+              leading: Icon(Iconsax.transaction_minus_outline,
+                  color:
+                  ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                      ? Colors.white
+                      : const Color(0xFFA3A3A3)),
+              title: Text('Transactions',
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                        ? Colors.white
+                        : const Color(0xFFA3A3A3),
+                  )),
+            ),
+          ),
+          const SizedBox(height: 10),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 10),
+            decoration: BoxDecoration(
+              // Check if route is dashboard and set the color to XColors.primary
+                color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                    ? XColors.primary.withOpacity(0.15)
+                    : Colors.transparent,
+                borderRadius: BorderRadius.circular(8)),
+            child: ListTile(
+              leading: Icon(Iconsax.shopping_bag_outline,
+                  color:
+                  ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                      ? Colors.white
+                      : const Color(0xFFA3A3A3)),
+              title: Text('Loans & EMI',
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                        ? Colors.white
+                        : const Color(0xFFA3A3A3),
+                  )),
+            ),
+          ),
+          const SizedBox(height: 10),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 10),
+            decoration: BoxDecoration(
+              // Check if route is dashboard and set the color to XColors.primary
+                color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                    ? XColors.primary.withOpacity(0.15)
+                    : Colors.transparent,
+                borderRadius: BorderRadius.circular(8)),
+            child: ListTile(
+              leading: Icon(Iconsax.wallet_1_outline,
+                  color:
+                  ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                      ? Colors.white
+                      : const Color(0xFFA3A3A3)),
+              title: Text('Lendings',
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
+                        ? Colors.white
+                        : const Color(0xFFA3A3A3),
+                  )),
             ),
           ),
           const SizedBox(height: 10),
@@ -72,7 +220,7 @@ class _SidebarState extends State<Sidebar> {
                   ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
                       ? Colors.white
                       : const Color(0xFFA3A3A3)),
-              title: Text('Accounts',
+              title: Text('Contacts',
                   style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: ModalRoute.of(context)!.settings.name!.contains(Routes.accounts)
                         ? Colors.white

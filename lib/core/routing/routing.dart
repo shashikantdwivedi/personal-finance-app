@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pf_app/modules/account/ui/accounts_screen.dart';
 import 'package:pf_app/modules/auth/ui/login_screen.dart';
 import 'package:pf_app/modules/base.dart';
 import 'package:pf_app/modules/dashboard/ui/dashboard_screen.dart';
@@ -20,7 +21,11 @@ class Routing {
             settings: settings);
       case Routes.dashboard:
         return MaterialPageRoute(
-            builder: (_) => const XOnline(child: Base()),
+            builder: (_) => const XOnline(child: Base(child: DashboardScreen(),)),
+            settings: settings);
+      case Routes.accounts:
+        return MaterialPageRoute(
+            builder: (_) => const XOnline(child: Base(child: AccountsScreen(),)),
             settings: settings);
       default:
         return MaterialPageRoute(
